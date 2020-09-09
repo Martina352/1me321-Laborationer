@@ -1,0 +1,10 @@
+Facit för validering och rättning av felen i filen errors1.html
+
+Rad 12: Starttagg för <p> saknas.
+Rad 13. <b> påbörjat, men avslutas med </i>. Så antingen ersätts det till <i> i början eller </b> i slutet.
+Rad 14 Elementet p får inte finnas inom b, utan det måste vara tvärtom, dvs <p><b>...</b></p>.
+Rad 16. alt-attributet saknas. Det ska vara <img src="..." alt="...">, där texten i alt-attributet ger en alternativ text, till de som inte kan se bilden, t.ex. "Roddbåtar vid en sjöstrand" i Detta fall.
+Rad 19: Sluttaggen för länken saknas. Den måste avslutas med </a>.
+
+Då alla fel är rättade och filen visas i webbläsaren visas inte bilden. Det beror på att det är fel filändelse. Det ska vara .jpg i detta fall.
+Länken fungerar inte. Det beror på att det är ett blanktecken inlagt i filnamnet. Det ska vara errors2.html, utan blanktecken, så som filen är namngiven.
