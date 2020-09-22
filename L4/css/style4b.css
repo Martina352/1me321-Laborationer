@@ -23,7 +23,8 @@ body {
 /* ----- float för figure ----- */
 
 figure {
-    
+    float: left;
+    margin: 0 20px 10px 0;
 }
 
 figure img {
@@ -38,7 +39,7 @@ figure figcaption {
 /* ----- float för kolumnerna ----- */
 
 .columns {
-    
+    clear: both;
 }
 
 /* ----- float för boxarna ----- */
@@ -50,11 +51,18 @@ figure figcaption {
 }
 
 #wrapper div { /* Stil för alla boxar */
-    width: 200px;
+    width: 25%;
     height: 100px;
     padding: 10px;
     margin: 20px;
     border: 6px solid #000000;
+    float: left;
+}
+
+#wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 #box1 {
@@ -67,4 +75,22 @@ figure figcaption {
 
 #box3 {
     background-color: #2886d8;
+}
+
+.col1 {
+    float: left;
+    width: 28%;
+    margin-right: 4%;
+}
+
+.col2 {
+    width: 68%;
+    float: left;
+}
+
+.columns::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 40px;
 }
